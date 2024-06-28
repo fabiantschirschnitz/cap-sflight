@@ -14,7 +14,8 @@
     "test": "jest",
     "test:mocha": "npx mocha --timeout 20000",
     "travel-processor": "cds watch --open travel_processor/webapp/index.html?sap-ui-xx-viewCache=false",
-    "travel-analytics": "cds watch --open travel_analytics/webapp/index.html?sap-ui-xx-viewCache=false"
+    "travel-analytics": "cds watch --open travel_analytics/webapp/index.html?sap-ui-xx-viewCache=false",
+    "build": "mbt build --mtar capire.sflight.mtar --platform CF"
   },
   "dependencies": {
     "@sap/cds": ">=7.0.0",
@@ -33,7 +34,8 @@
     "http-proxy": "^1.18.1",
     "jest": "^29.0.2",
     "qunit": "^2.9.3",
-    "eslint": "^9"
+    "eslint": "^9",
+    "mbt": "1.2.28"
   },
   "cds": {
     "requires": {
@@ -111,8 +113,8 @@
       }
     },
     "sql": {
-      "transitive_localized_views" : false,
-      "native_hana_associations" : false
+      "transitive_localized_views": false,
+      "native_hana_associations": false
     }
   },
   "jest": {
